@@ -1,5 +1,8 @@
 import signiture.CalculationFunction;
+import signiture.ExFunction;
+import signiture.ExFunction2;
 import util.AddClass;
+import util.Member;
 
 public class Main {
 
@@ -34,6 +37,19 @@ public class Main {
 
         System.out.println(processAdd(addFunction2, 3,3));
         System.out.println(processAdd(addFunction3, 4, 4));
+
+
+        //생성자 참조를 이용하는 방식.
+        ExFunction createMemberFunction = Member::new;
+        System.out.println(createMemberFunction.getMemberObject());
+        Member member = new Member();
+        createMemberFunction = member::createObj;
+        System.out.println(createMemberFunction.getMemberObject());
+
+        //앗 생성자가 파라미터가 있는데 우짬?
+        //그럼 시그니쳐 메소드가 2개의 파라미터를 받고 Member 객체를 뱉는 메소드라는걸 명시
+        ExFunction2 createMemberFunction2 = Member::new;
+        System.out.println(createMemberFunction2.getMemeber("전설",100).getName());
 
     }
 
