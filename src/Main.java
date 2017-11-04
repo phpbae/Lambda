@@ -1,6 +1,7 @@
 import signiture.CalculationFunction;
 import signiture.ExFunction;
 import signiture.ExFunction2;
+import standard.ConsumerEx;
 import util.AddClass;
 import util.Member;
 
@@ -50,6 +51,12 @@ public class Main {
         //그럼 시그니쳐 메소드가 2개의 파라미터를 받고 Member 객체를 뱉는 메소드라는걸 명시
         ExFunction2 createMemberFunction2 = Member::new;
         System.out.println(createMemberFunction2.getMemeber("전설",100).getName());
+
+
+        System.out.println("------------------------------------------------------------------");
+        //자바에서 제공하는 함수형 인터페이스
+        //1. Consumer
+        ConsumerEx.callConsumerFunctionalInterface();
 
     }
 
