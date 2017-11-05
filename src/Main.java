@@ -2,6 +2,7 @@ import signiture.CalculationFunction;
 import signiture.ExFunction;
 import signiture.ExFunction2;
 import standard.ConsumerEx;
+import standard.SupplierEx;
 import util.AddClass;
 import util.Member;
 
@@ -57,6 +58,11 @@ public class Main {
         //자바에서 제공하는 함수형 인터페이스
         //1. Consumer
         ConsumerEx.callConsumerFunctionalInterface();
+
+        System.out.println("------------------------------------------------------------------");
+        //자바에서 제공하는 함수형 인터페이스
+        //2. Supplier
+        SupplierEx.callSupplierFunctionalInterface();
 
     }
 
