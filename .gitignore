@@ -19,3 +19,5 @@
 .idea/
 .out/
 *.iml
+/.idea/kotlinc.xml
+/.idea/uiDesigner.xml
