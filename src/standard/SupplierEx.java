@@ -17,6 +17,15 @@ public class SupplierEx {
         BooleanSupplier booleanSupplier = () -> {return true;};
         System.out.println(booleanSupplier.getAsBoolean());
 
+        Supplier<String> toPrint = new Supplier<String>() {
+            @Override
+            public String get() {
+                return "안녕하세요?";
+            }
+        };
+
+        System.out.println(toPrint.get());
+
     }
 
 }

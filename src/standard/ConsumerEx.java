@@ -23,6 +23,15 @@ public class ConsumerEx {
 
         biConsumer.accept("StringObj1", "StringObj2");
 
+        Consumer<String> toPrint = new Consumer<String>() {
+            @Override
+            public void accept(String s) {
+                System.out.println(s);
+            }
+        };
+
+        toPrint.accept("우아아앙!");
+
     }
 
 }

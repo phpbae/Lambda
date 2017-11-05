@@ -2,6 +2,8 @@ import signiture.CalculationFunction;
 import signiture.ExFunction;
 import signiture.ExFunction2;
 import standard.ConsumerEx;
+import standard.FunctionEx;
+import standard.PredicateEx;
 import standard.SupplierEx;
 import util.AddClass;
 import util.Member;
@@ -63,6 +65,16 @@ public class Main {
         //자바에서 제공하는 함수형 인터페이스
         //2. Supplier
         SupplierEx.callSupplierFunctionalInterface();
+
+        System.out.println("------------------------------------------------------------------");
+        //자바에서 제공하는 함수형 인터페이스
+        //3. Function
+        FunctionEx.callFunctionFunctionalInterface();
+
+        System.out.println("------------------------------------------------------------------");
+        //자바에서 제공하는 함수형 인터페이스
+        //4. Predicate
+        PredicateEx.callPredicateFunctionalInterface();
 
     }
 
