@@ -1,5 +1,10 @@
 # Lambda
 람다식과 친숙해 지기위한 나만의 노오력!
+-
+자바 API에서는 사용자 편의를 위해 함수형 인터페이스를 제공합니다.
+- java.util.function 표준 API패키지로 제공
+
+<br>
 
 
 1. Consumer 인터페이스
